@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'myfirst',
+    selector: 'myfirst', // invocar via tag,
+    // selector: '[myfirst]', // diretiva
+    // selector: '.myfirst', // css
     templateUrl: './myfirst.component.html',
     styleUrls: ['./myfirst.component.css']
     //   2° forma

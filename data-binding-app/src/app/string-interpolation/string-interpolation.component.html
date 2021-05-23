@@ -1,0 +1,29 @@
+<h1>First name: {{ firstName }}</h1>
+<h2>Last name: {{ lastName }}</h2>
+
+<p>Age: {{ person.age }}</p>
+<p>Sex: {{ person.sex }}</p>
+<p>Account balance: {{ 1200 + 300 }}</p>
+
+<mat-card class="mycard">
+  <mat-card-header>
+    <mat-card-title>{{ firstName }} {{ lastName }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Age: {{ person.age }}</p>
+    <p>Sex: {{ person.sex }}</p>
+    <p>Height: {{ person.height }}</p>
+    <p>address: {{ person.address }}</p>
+    <p>Account balance: {{ 1200 + 300 }}</p>
+    <form>
+      <mat-form-field>
+        <mat-label>Favorite Food</mat-label>
+        <input matInput type="text" placeholder="Food" value="{{ person.favoriteFood }}"/>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

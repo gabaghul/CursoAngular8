@@ -1,0 +1,18 @@
+<section class="section">
+  <button mat-raised-button color="primary" (click)="save()">Save</button>
+  <button mat-raised-button color="secondary" (click)="inc()">
+    {{ buttonName }}
+  </button>
+</section>
+
+<section class="section">
+  <button mat-raised-button color="primary" [disabled]="!btnEnabled">My button</button>
+  <button mat-raised-button color="secondary" [disabled]="!btnEnabled">Another button of mine</button>
+  
+  <button mat-raised-button color="warn" [disabled]="!btnEnabled" (click)="disabled()">Disable</button>
+  <mat-progress-spinner class="progress"
+    color="primary"
+    [mode]="spinnerMode"
+    [value]="value">
+</mat-progress-spinner>
+</section>

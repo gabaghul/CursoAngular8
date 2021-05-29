@@ -18,11 +18,16 @@ export class EventBindingComponent implements OnInit {
   selectDisabled = false
   value = 0;
   selectedOption = 'Volvo'
+  inputValue = 'Sample'
 
   constructor() { }
   
   
   ngOnInit(): void {
+  }
+
+  inputEvent(event : Event) {
+    this.inputValue = (event.target as HTMLInputElement).value
   }
 
   save() {

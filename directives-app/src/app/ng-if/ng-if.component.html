@@ -26,5 +26,7 @@
             </mat-form-field>
         </section>
     </mat-card-content>
-    <mat-card-footer></mat-card-footer>
+    <mat-card-footer>
+        <app-sub-ng-if *ngIf="showName && showAddress && showPhone && showAge"></app-sub-ng-if>
+    </mat-card-footer>
 </mat-card>

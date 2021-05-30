@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubNgIfComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.log("SubNgIfComponent criado!")    
+  }
 
   ngOnInit(): void {
   }
 
+  ngOnDestroy(): void {
+    console.log("SubNgIfComponent destruído!")
+  }
 }

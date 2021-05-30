@@ -1,0 +1,17 @@
+<!-- <p *ngFor="let name of names"> Olá {{name}}!</p>
+
+<p *ngFor="let name of names; let i=index"> {{i}} : {{name}}</p> -->
+
+<mat-card>
+    <mat-card-title>
+        Select ngFor
+    </mat-card-title>
+    <mat-card-content>
+        <mat-selection-list #nameList>
+            <mat-list-option *ngFor="let name of names">{{name}}</mat-list-option>
+        </mat-selection-list>
+    </mat-card-content>
+    <mat-card-footer>
+        <p>Options selected: {{nameList.selectedOptions.selected.length}}</p>
+    </mat-card-footer>
+</mat-card>

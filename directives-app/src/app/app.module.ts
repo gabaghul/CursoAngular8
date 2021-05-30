@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { MatListModule } from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatListModule } from '@angular/material/list';
     MatRadioModule,
     MatCheckboxModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

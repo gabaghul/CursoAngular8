@@ -4,7 +4,33 @@
 
 <mat-card>
     <mat-card-title>
-        Select ngFor
+        Select ngFor pt 2
+    </mat-card-title>
+    <mat-card-content>
+        <mat-list>
+            <h3 matSubHeader>Names:</h3>
+            <mat-list-item *ngFor="let name of names">
+                <mat-icon matListIcon>person</mat-icon>
+                <h4 matLine>{{name}}</h4>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <br><br>
+            <h3 matSubHeader>Cities:</h3>
+            <mat-list-item *ngFor="let city of cities">
+                <mat-icon matListIcon>apartment</mat-icon>
+                <h4 matLine>{{city.name}}</h4>
+                <h4 matLine>{{city.state}}</h4>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+    <mat-card-footer>
+
+    </mat-card-footer>
+</mat-card>
+
+<mat-card>
+    <mat-card-title>
+        Select ngFor pt 1
     </mat-card-title>
     <mat-card-content>
         <mat-selection-list #nameList>

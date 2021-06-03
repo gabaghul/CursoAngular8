@@ -15,7 +15,9 @@ import { MatInputModule } from '@angular/material/input';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { MatListModule } from '@angular/material/list';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import {MatIconModule} from '@angular/material/icon';
     NgClassComponent,
     NgIfComponent,
     SubNgIfComponent,
-    NgForComponent
+    NgForComponent,
+    NgForFormComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatCheckboxModule,
     MatInputModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
